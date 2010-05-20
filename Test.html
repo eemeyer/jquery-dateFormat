@@ -51,6 +51,8 @@
     	assertEqual("50", $.format.date("2009-12-18 10:54:50.546", "ss"));
     	assertEqual("18/12/2009 10:54:50", $.format.date("2009-12-18 10:54:50.546", "dd/MM/yyyy hh:mm:ss"));
     	assertEqual("a18/b12/c2009 d10:e54:f50", $.format.date("2009-12-18 10:54:50.546", "add/bMM/cyyyy dhh:emm:fss"));
+    	assertEqual("2010", $.format.date(new Date(1274370756526), "yyyy"));
+
     }},
     testFormatDateType2 : function() { with(this) {
     	assertEqual("13/01/2010", $.format.date("Wed Jan 13 10:43:41 CET 2010", "dd/MM/yyyy"));
